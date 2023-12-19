@@ -198,6 +198,7 @@
                 "-DWITH_SERVER:BOOL=OFF",
                 "-DWITH_VAAPI:BOOL=ON",
                 "-DWITH_AAD:BOOL=OFF",
+                "-DWITH_WAYLAND:BOOL=ON",
                 "-DWITH_WEBVIEW:BOOL=OFF"
             ],
             "sources": [
