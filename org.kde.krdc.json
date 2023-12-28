@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz",
-                    "sha256": "b60e2ff7f367b9eee2b5634d3a63303ddfede0e6a18dfca88c44a8770e7e4234",
+                    "url": "https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz",
+                    "sha256": "1861d498f5b6f1741b6abc73e608478491edcf9c9d4b6630eef6e74596de9dc1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1729,
@@ -94,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.11.2.tar.gz",
-                    "sha256": "674b5600bc2ae3e16e5b5a811c7d5b0daaff6198601ba278bd15b4cb9b281044",
+                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz",
+                    "sha256": "22751fdbc91d4fc00432c3e55e42b67a9710fa3929c3edaeb70304cf8227c02d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
