@@ -129,6 +129,7 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
+                "-DWITH_FUSE:BOOL=OFF",
                 "-DWITH_MANPAGES:BOOL=OFF",
                 "-DWITH_OSS:BOOL=OFF",
                 "-DWITH_SAMPLE:BOOL=OFF",
