@@ -134,7 +134,8 @@
                 "-DWITH_OSS:BOOL=OFF",
                 "-DWITH_SAMPLE:BOOL=OFF",
                 "-DWITH_SERVER:BOOL=OFF",
-                "-DWITH_VAAPI:BOOL=ON"
+                "-DWITH_VAAPI:BOOL=ON",
+                "-DWITH_WEBVIEW:BOOL=OFF"
             ],
             "sources": [
                 {
