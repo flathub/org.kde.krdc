@@ -1,7 +1,7 @@
 {
     "id": "org.kde.krdc",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
     "command": "krdc",
     "rename-icon": "krdc",
@@ -37,12 +37,12 @@
         {
             "name": "libssh",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DWITH_DEBUG_CALLTRACE:BOOL=OFF",
                 "-DWITH_EXAMPLES:BOOL=OFF",
                 "-DWITH_SERVER:BOOL=OFF"
             ],
-            "builddir": true,
             "sources": [
                 {
                     "type": "archive",
@@ -59,7 +59,8 @@
         },
         {
             "name": "libvncserver",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DWITH_EXAMPLES:BOOL=OFF",
                 "-DWITH_GTK:BOOL=OFF",
@@ -82,14 +83,59 @@
             ]
         },
         {
+            "name": "pkcs11-helper",
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.30.0.tar.gz",
+                    "sha256": "076c9f664812a45f2da25efc157338b0b8bb1949117f0144050fec176b6fdf78",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 91990,
+                        "stable-only": true,
+                        "url-template": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-$version.tar.gz"
+                    }
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "autogen.sh",
+                    "commands": [
+                        "autoreconf -vfi"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "krb5",
+            "buildsystem": "autotools",
+            "subdir": "src",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz",
+                    "sha256": "9560941a9d843c0243a71b17a7ac6fe31c7cebb5bce3983db79e52ae7e850491",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13287,
+                        "stable-only": true,
+                        "url-template": "https://kerberos.org/dist/krb5/${version0}.${version1}/krb5-${version0}.${version1}.${version2}.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "freerdp",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
+                "-DWITH_FUSE:BOOL=OFF",
                 "-DWITH_MANPAGES:BOOL=OFF",
                 "-DWITH_OSS:BOOL=OFF",
                 "-DWITH_SAMPLE:BOOL=OFF",
                 "-DWITH_SERVER:BOOL=OFF",
-                "-DWITH_VAAPI:BOOL=ON"
+                "-DWITH_VAAPI:BOOL=ON",
+                "-DWITH_WEBVIEW:BOOL=OFF"
             ],
             "sources": [
                 {
@@ -108,11 +154,15 @@
         {
             "name": "krdc",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DQT_MAJOR_VERSION=6"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.5/src/krdc-23.08.5.tar.xz",
-                    "sha256": "c2c57cebb22a9201ce5d6c305654e485df1d0deaa17496a8d85fe19a80f059f4",
+                    "url": "https://download.kde.org/stable/release-service/24.02.0/src/krdc-24.02.0.tar.xz",
+                    "sha256": "c80d31b2395e59bda15e7a760b1e1d414b364167911260892ae8e1f60632a261",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
