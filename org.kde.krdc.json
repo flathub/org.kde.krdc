@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz",
-                    "sha256": "1861d498f5b6f1741b6abc73e608478491edcf9c9d4b6630eef6e74596de9dc1",
+                    "url": "https://www.libssh.org/files/0.11/libssh-0.11.1.tar.xz",
+                    "sha256": "14b7dcc72e91e08151c58b981a7b570ab2663f630e7d2837645d5a9c612c1b79",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1729,
@@ -94,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.11.2.tar.gz",
-                    "sha256": "674b5600bc2ae3e16e5b5a811c7d5b0daaff6198601ba278bd15b4cb9b281044",
+                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.8.0.tar.gz",
+                    "sha256": "e313934a77a0bcca3af803455dd9ea1aa2f657c598e3397325aa48e6effd450d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.5/src/krdc-23.08.5.tar.xz",
-                    "sha256": "c2c57cebb22a9201ce5d6c305654e485df1d0deaa17496a8d85fe19a80f059f4",
+                    "url": "https://download.kde.org/stable/release-service/24.08.0/src/krdc-24.08.0.tar.xz",
+                    "sha256": "b6bfda5da8ef52ef37ac0d40f1d755f82ac2e689f3486d399d9bb9b57aee3305",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
