@@ -87,32 +87,86 @@
             "name": "freerdp",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "build-options": {
-                "env": {
-                    "CXXFLAGS": "-Wno-incompatible-pointer-types -Wno-int-conversion",
-                    "CFLAGS": "-Wno-incompatible-pointer-types -Wno-int-conversion"
-                }
-            },
             "config-opts": [
-                "-DWITH_MANPAGES:BOOL=OFF",
-                "-DWITH_OSS:BOOL=OFF",
-                "-DWITH_SAMPLE:BOOL=OFF",
-                "-DWITH_SERVER:BOOL=OFF"
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo",
+                "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+                "-DCHANNEL_TSMF=OFF",
+                "-DCHANNEL_URBDRC=ON",
+                "-DBUILD_TESTING=OFF",
+                "-DWITH_MANPAGES=OFF",
+                "-DWITH_WAYLAND=ON",
+                "-DWITH_FUSE=OFF",
+                "-DWITH_PCSC=ON",
+                "-DWITH_PKCS11=ON",
+                "-DWITH_SWSCALE=ON",
+                "-DWITH_SERVER=ON",
+                "-DWITH_SAMPLE=ON",
+                "-DWITH_CUPS=ON",
+                "-DWITH_FFMPEG=ON",
+                "-DWITH_DSP_FFMPEG=ON",
+                "-DWITH_FAAC=OFF",
+                "-DWITH_FAAD2=OFF",
+                "-DWITH_OSS=OFF",
+                "-DWITH_SDL_IMAGE_DIALOGS=ON",
+                "-DWITH_WEBVIEW=OFF",
+                "-DWITH_PULSE=ON"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.11.7.tar.gz",
-                    "sha256": "22dbeeaad065e93f152d70e04ec8eeab08aa32c406a96be64f252526623625a4",
+                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.15.0.tar.gz",
+                    "sha256": "9a922df0237a90a9cd15ec2261666cfcfaf29923278f0e463bb965059ac1b87d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
                         "stable-only": true,
-                        "versions": {
-                            "<": "3"
-                        },
                         "url-template": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/$version.tar.gz"
                     }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "krb5",
+                    "buildsystem": "autotools",
+                    "subdir": "src",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz",
+                            "sha256": "b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35",
+                            "x-checker-data": {
+                                "type": "html",
+                                "url": "https://kerberos.org/dist/",
+                                "version-pattern": "Kerberos V5 Release ([\\d\\.-]*) - current release",
+                                "url-template": "https://kerberos.org/dist/krb5/$version0.$version1/krb5-$version.tar.gz"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "pkcs11-helper",
+                    "buildsystem": "autotools",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.30.0.tar.gz",
+                            "sha256": "076c9f664812a45f2da25efc157338b0b8bb1949117f0144050fec176b6fdf78",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 91990,
+                                "stable-only": true,
+                                "url-template": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-$version.tar.gz"
+                            }
+                        },
+                        {
+                            "type": "script",
+                            "dest-filename": "autogen.sh",
+                            "commands": [
+                                "autoreconf -vfi"
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -123,8 +177,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/krdc-24.12.3.tar.xz",
-                    "sha256": "4bfe9e01fb16d97851cbf22563d5fb109976e3c561e8b079c493201613953764",
+                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/krdc-25.04.0.tar.xz",
+                    "sha256": "c80d008cd4370cd79ff987fe792ef8a10da5e994addb84e884343a46d14b3df4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
