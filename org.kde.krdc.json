@@ -110,7 +110,8 @@
                 "-DWITH_OSS=OFF",
                 "-DWITH_SDL_IMAGE_DIALOGS=ON",
                 "-DWITH_WEBVIEW=OFF",
-                "-DWITH_PULSE=ON"
+                "-DWITH_PULSE=ON",
+                "-DWITH_VAAPI:BOOL=ON"
             ],
             "sources": [
                 {
