@@ -116,8 +116,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.16.0.tar.gz",
-                    "sha256": "87af812411b3c44f5e50d04d1df5460c520d10ea6d5fb714b00bf8b8758b7594",
+                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.17.0.tar.gz",
+                    "sha256": "ad31fdacf41751ef5a625c8f8cfef239411fc62805236fa1d422cf4bf5d0e190",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
