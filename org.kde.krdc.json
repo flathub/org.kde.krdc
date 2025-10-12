@@ -21,7 +21,8 @@
         "--socket=pulseaudio",
         "--talk-name=org.kde.kwalletd5",
         "--talk-name=org.kde.kwalletd6",
-        "--talk-name=org.kde.StatusNotifierWatcher"
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf"
     ],
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
@@ -192,6 +193,19 @@
             "post-install": [
                 "mkdir -p /app/share/icons/hicolor/scalable/apps/",
                 "install -D /usr/share/icons/breeze/apps/48/krdc.svg /app/share/icons/hicolor/scalable/apps/"
+            ]
+        },
+        {
+            "name": "legacy-openssl-cnf",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D legacy-openssl.cnf $FLATPAK_DEST/share/legacy-openssl.cnf"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
             ]
         }
     ]
