@@ -24,19 +24,7 @@
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf"
     ],
-    "add-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "directory": "lib/ffmpeg",
-            "add-ld-path": ".",
-            "version": "24.08",
-            "autodownload": true
-        }
-    },
-    "cleanup-commands": [
-        "mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"
-    ],
     "modules": [
-        "shared-modules/libusb/libusb.json",
         {
             "name": "libssh",
             "buildsystem": "cmake-ninja",
