@@ -118,8 +118,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.17.2.tar.gz",
-                    "sha256": "04a2e8049602e7aba767880990959facf2ebf7b5fbeeb5120e81838d8c2d2f17",
+                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.18.0.tar.gz",
+                    "sha256": "d2ec022566fa523ef33c29db952d428eb0ddc0a7b7f36204499fd06185178e5e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
@@ -153,8 +153,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.30.0.tar.gz",
-                            "sha256": "076c9f664812a45f2da25efc157338b0b8bb1949117f0144050fec176b6fdf78",
+                            "url": "https://github.com/OpenSC/pkcs11-helper/archive/refs/tags/pkcs11-helper-1.31.0.tar.gz",
+                            "sha256": "585e0347892bdf45220b080c9eae9216b461f96369c19be1e4bb6d80a078dc6b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 91990,
@@ -180,8 +180,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.2/src/krdc-25.08.2.tar.xz",
-                    "sha256": "e32d650e933257566e0c1b84ae0cfced6dd6a4dff33a04795a4e375bf8705e7a",
+                    "url": "https://download.kde.org/stable/release-service/25.08.3/src/krdc-25.08.3.tar.xz",
+                    "sha256": "aa317b8a21c0362b6ddd69f122ca17f444edfeeba2f422b75ce51c666950906a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
