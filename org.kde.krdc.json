@@ -13,16 +13,16 @@
         "/share/man"
     ],
     "finish-args": [
-        "--share=ipc",
-        "--socket=fallback-x11",
-        "--socket=wayland",
-        "--share=network",
         "--device=dri",
+        "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf",
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
         "--socket=pulseaudio",
-        "--talk-name=org.kde.kwalletd5",
-        "--talk-name=org.kde.kwalletd6",
+        "--socket=wayland",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--env=OPENSSL_CONF=/app/share/legacy-openssl.cnf"
+        "--talk-name=org.kde.kwalletd5",
+        "--talk-name=org.kde.kwalletd6"
     ],
     "modules": [
         {
