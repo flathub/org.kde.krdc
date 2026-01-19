@@ -86,7 +86,7 @@
                 "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
                 "-DCMAKE_VERBOSE_MAKEFILE=ON",
                 "-DWITH_CLIENT_SDL:BOOL=OFF",
-                "-DWITH_CLIENT_SDL2:BOOL=ON",
+                "-DWITH_CLIENT_SDL2:BOOL=OFF",
                 "-DWITH_CLIENT_SDL3:BOOL=OFF",
                 "-DWITH_CUPS=ON",
                 "-DWITH_DSP_FFMPEG=ON",
@@ -162,9 +162,7 @@
                             ]
                         }
                     ]
-                },
-                "shared-modules/SDL2/SDL2_ttf.json",
-                "shared-modules/SDL2/SDL2_image.json"
+                }
             ]
         },
         {
