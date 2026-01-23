@@ -195,8 +195,8 @@
             ],
             "sources": [
                 {
-                    "type": "dir",
-                    "path": "."
+                    "type": "file",
+                    "path": "legacy-openssl.cnf"
                 }
             ]
         }
