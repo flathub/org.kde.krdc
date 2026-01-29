@@ -7,10 +7,16 @@
     "rename-icon": "krdc",
     "cleanup": [
         "/include",
+        "/lib/cmake",
         "/lib/pkgconfig",
-        "/lib/*.a",
-        "/lib/*.la",
-        "/share/man"
+        "/share/aclocal",
+        "/share/doc",
+        "/share/et",
+        "/share/examples",
+        "/share/man",
+        "/share/qlogging-categories6",
+        "*.la",
+        "*.a"
     ],
     "finish-args": [
         "--device=dri",
