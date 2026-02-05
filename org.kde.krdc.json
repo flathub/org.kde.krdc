@@ -134,8 +134,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz",
-                            "sha256": "1a8832b8cad923ebbf1394f67e2efcf41e3a49f460285a66e35adec8fa0053af",
+                            "url": "https://kerberos.org/dist/krb5/1.22/krb5-1.22.2.tar.gz",
+                            "sha256": "3243ffbc8ea4d4ac22ddc7dd2a1dc54c57874c40648b60ff97009763554eaf13",
                             "x-checker-data": {
                                 "type": "html",
                                 "url": "https://kerberos.org/dist/",
@@ -178,8 +178,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.1/src/krdc-25.12.1.tar.xz",
-                    "sha256": "5347e11caf0a766ed12d12697b70d5331a9115c94bbe3300c8eac28054737fee",
+                    "url": "https://download.kde.org/stable/release-service/25.12.2/src/krdc-25.12.2.tar.xz",
+                    "sha256": "522596f8e6788a72056e6627088b4a3df1c586e59c98a41a3b7e46f7c0644c19",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
