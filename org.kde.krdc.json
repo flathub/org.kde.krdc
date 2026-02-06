@@ -181,6 +181,7 @@
                     "url": "https://download.kde.org/stable/release-service/25.12.2/src/krdc-25.12.2.tar.xz",
                     "sha256": "522596f8e6788a72056e6627088b4a3df1c586e59c98a41a3b7e46f7c0644c19",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
