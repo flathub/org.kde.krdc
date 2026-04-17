@@ -172,14 +172,41 @@
             ]
         },
         {
+            "name": "qtkeychain",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "cleanup": [
+                "mkspecs"
+            ],
+            "config-opts": [
+                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
+                "-DLIB_INSTALL_DIR=/app/lib",
+                "-DBUILD_TRANSLATIONS=NO",
+                "-DBUILD_WITH_QT6=ON"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/0.15.0.tar.gz",
+                    "sha256": "f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 4138,
+                        "stable-only": true,
+                        "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "krdc",
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.12.3/src/krdc-25.12.3.tar.xz",
-                    "sha256": "1997463cd64cfb88a015d2b665cb7d5d451e8f54285af047d18f1bd838a4cd27",
+                    "url": "https://download.kde.org/stable/release-service/26.04.0/src/krdc-26.04.0.tar.xz",
+                    "sha256": "430dc9e821fc0db7730eadd2306d81531015315a0a194fd0cb3ed6dcdff6489d",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
