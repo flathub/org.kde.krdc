@@ -116,8 +116,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.26.0.tar.gz",
-                    "sha256": "ae3b1c0b8e334ecbc2c784bce266249309fad32a0ef41947ce5c059eb18e2059",
+                    "url": "https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.27.1.tar.gz",
+                    "sha256": "929ac6a5a8651fcf524e0f061aa7e0186e25eae5af2096525f99f6f7a376fc86",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10442,
@@ -205,8 +205,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.2/src/krdc-26.04.2.tar.xz",
-                    "sha256": "21cea1b78978b017290e9df71823149da534e97f6f964ca9d62de767fa1e01f3",
+                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/krdc-26.04.3.tar.xz",
+                    "sha256": "74cd7e55f2a0a72a8211043122bdaaf1d15fe8393466baa57b593feb3ae1fd04",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
